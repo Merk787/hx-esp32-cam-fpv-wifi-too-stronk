@@ -10,24 +10,24 @@ jobs:
     strategy:
       matrix:
         include:
-          - project: air_firmware_esp32c5
-            artifact_suffix: ""
-            build_flags: ""
-          - project: air_firmware_esp32c5
-            artifact_suffix: "-apfpv"
-            build_flags: "-DAPFPV_FIRMWARE"
-          - project: air_firmware_esp32cam
-            artifact_suffix: ""
-            build_flags: ""
-          - project: air_firmware_esp32cam
-            artifact_suffix: "-apfpv"
-            build_flags: "-DAPFPV_FIRMWARE"
+         # - project: air_firmware_esp32c5
+         #   artifact_suffix: ""
+         #   build_flags: ""
+        #  - project: air_firmware_esp32c5
+        #   artifact_suffix: "-apfpv"
+         #   build_flags: "-DAPFPV_FIRMWARE"
+       #  - project: air_firmware_esp32cam
+        #   artifact_suffix: ""
+      #    build_flags: ""
+      #    - project: air_firmware_esp32cam
+       #     artifact_suffix: "-apfpv"
+       #     build_flags: "-DAPFPV_FIRMWARE"
           - project: air_firmware_esp32s3sense
             artifact_suffix: ""
             build_flags: ""
-          - project: air_firmware_esp32s3sense
-            artifact_suffix: "-apfpv"
-            build_flags: "-DAPFPV_FIRMWARE"
+         # - project: air_firmware_esp32s3sense
+        #    artifact_suffix: "-apfpv"
+         #   build_flags: "-DAPFPV_FIRMWARE"
 
     steps:
       - name: Checkout repository
